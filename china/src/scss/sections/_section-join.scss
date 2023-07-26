@@ -1,0 +1,62 @@
+.section--join {
+  display: flex;
+  flex-direction: column;
+  padding-top: 2.2rem;
+  padding-bottom: 4.9rem;
+  .section-layer {
+  }
+  .join {
+    &__row {
+      padding: 2.4rem 0;
+    }
+
+    &__title {
+      margin-bottom: 1.2rem;
+    }
+    p {
+    }
+  }
+  .benefits {
+    padding: 2.4rem 0;
+    background-color: #ff59a3;
+    .container {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+    }
+    &__flex {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-between;
+      flex-basis: 100%;
+      margin-right: 2%;
+    }
+
+    &__title {
+      font-size: 2.2rem;
+      line-height: 2.8rem;
+      margin-bottom: 1rem;
+    }
+
+    &__price {
+      font-size: 2.2rem;
+      line-height: 2.8rem;
+    }
+
+    &__button {
+      margin: 0;
+      padding: 1.3rem 3.5rem;
+      max-height: 4.8rem;
+      min-width: auto;
+    }
+  }
+  .cost {
+    padding: 2.4rem 0;
+    &__title {
+      margin-bottom: 0.9rem;
+    }
+    ul {
+      margin-left: 2.4rem;
+    }
+  }
+}

@@ -1,0 +1,151 @@
+.section-plans {
+  .section-layer {
+    display: flex;
+    flex-direction: column;
+  }
+  .plans {
+    &__container {
+      &_outer {
+        max-width: 100%;
+        overflow-x: scroll;
+        -ms-overflow-style: none; /* IE и Edge */
+        scrollbar-width: none; /* Firefox */
+        margin-left: -1.8rem;
+        padding-left: 1.8rem;
+        padding-right: 1.8rem;
+        margin-bottom: 1.5rem;
+      }
+
+      &_inner {
+        min-width: calc(26rem * 3 + 1.6rem * 2);
+      }
+    }
+    &__title {
+      text-align: center;
+    }
+
+    &__list {
+      list-style: none;
+      font-family: $font1;
+      display: flex;
+      flex-direction: row;
+      gap: 1.6rem;
+    }
+
+    &__item {
+      padding: 1.6rem 0rem 2.4rem 1.8rem;
+      box-shadow: 0px 4px 16px 0px rgba(31, 34, 41, 0.12);
+      margin-bottom: 3rem;
+      min-height: 59rem;
+    }
+
+    &__item_black {
+      color: #fff;
+      background: var(
+        --blk,
+        linear-gradient(
+          135deg,
+          #282c34 0%,
+          #373c48 83%,
+          #494e59 87.51%,
+          #373c48 91.88%,
+          #282c34 100%
+        )
+      );
+      box-shadow: 0px 4px 16px 0px rgba(31, 34, 41, 0.12);
+    }
+  }
+
+  .plan-feature {
+    display: flex;
+    gap: 0.9rem;
+    margin-bottom: 1rem;
+    align-items: center;
+    &__bold {
+      font-size: 2.8rem;
+      font-weight: 700;
+      line-height: 3.6rem;
+    }
+  }
+  .plan {
+    &__content {
+      min-height: 100%;
+      display: flex;
+      flex-direction: column;
+    }
+    &__title {
+      font-size: 2.7rem;
+      line-height: 133.333%;
+      margin-bottom: 2.4rem;
+    }
+    &__limit {
+      font-size: 2.2rem;
+      line-height: 2.8rem;
+      max-width: 80%;
+      margin-bottom: 0.8rem;
+    }
+    &__gb {
+      margin-bottom: 2.4rem;
+    }
+  }
+  .plan-options {
+    display: flex;
+    list-style: none;
+    flex-direction: column;
+
+    &__item {
+      display: flex;
+    }
+  }
+  .options-item {
+    display: flex;
+    gap: 0.9rem;
+    align-items: flex-start;
+    margin-bottom: 1.6rem;
+    max-width: 91%;
+  }
+  .plan-price {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: auto;
+    justify-self: end;
+    padding-right: 1.8rem;
+    &__container {
+      display: flex;
+      align-items: center;
+    }
+
+    &__currency {
+      max-width: 4rem;
+    }
+
+    &__price {
+      font-size: 3.2rem;
+      line-height: 2.8rem;
+      font-weight: 700;
+    }
+
+    &__button {
+      padding: 0.9rem 2rem;
+      min-width: auto;
+      margin: 0;
+    }
+  }
+  @media (min-width: 600px) {
+    .plans {
+      &__list {
+        gap: 3.6rem;
+      }
+      &__item {
+        min-height: 49rem;
+      }
+      &__title {
+        text-align: left;
+      }
+    }
+    br {
+      display: none;
+    }
+  }
+}

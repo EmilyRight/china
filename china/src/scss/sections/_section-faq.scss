@@ -1,0 +1,145 @@
+.section-faq {
+  .section-layer {
+    padding-top: 0;
+    display: flex;
+    flex-direction: column;
+    position: relative;
+  }
+  .faq {
+    padding-left: 1.8rem;
+    &__title {
+      margin-bottom: 2.5rem;
+    }
+    &__image {
+      position: absolute;
+      right: 2rem;
+      top: -3rem;
+      max-width: 10rem;
+    }
+  }
+  .item {
+    cursor: pointer;
+    -webkit-tap-highlight-color: transparent;
+    position: relative;
+    background-color: rgb(255, 255, 255);
+    padding: 2.1rem 1.8rem 2.1rem 0rem;
+    border-bottom: 1px solid #d1d8d6;
+    &__header {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+
+    &__title {
+      @include text-main;
+      font-weight: 700;
+      flex-basis: 75%;
+      margin-bottom: 1rem;
+    }
+
+    &__close-icon {
+      width: 2.95rem;
+      position: relative;
+      user-select: none;
+      svg {
+        display: block;
+        max-width: 100%;
+        width: inherit;
+      }
+    }
+
+    &__text {
+      overflow: hidden;
+      box-sizing: border-box;
+      max-height: 0;
+      opacity: 0;
+      transition: 0.3s ease-in-out;
+      ul {
+        margin-left: 1.8rem;
+      }
+    }
+    &.active {
+      .item__close-icon {
+        transform: rotateX(180deg);
+      }
+      .item__text {
+        max-height: 100rem;
+        padding-top: 2.4rem;
+        opacity: 1;
+      }
+    }
+  }
+
+  .small-text {
+    font-size: 1.4rem;
+    line-height: 1.8rem;
+    margin-bottom: 1.8rem;
+  }
+
+  .collspan-text {
+    font-size: 2.2rem;
+    line-height: 2.8rem;
+
+  }
+  .rowspan-text {
+    font-size: 2.2rem;
+    line-height: 2.8rem;
+    display: none;
+  }
+
+  table {
+    margin-top: 1rem;
+    border-collapse: collapse;
+    font-family: $font1;
+    width: 100%;
+    border-radius: 8px;
+    border: 1px solid var(--gray-day-100, #d3d9df);
+    tr,
+    td {
+      border: 1px solid var(--gray-day-100, #d3d9df);
+    }
+    td {
+      height: 5.5rem;
+      vertical-align: middle;
+      text-align: center;
+    }
+    .code {
+      width: 7rem;
+    }
+  }
+  @media (min-width: 600px) {
+    .section-layer {
+      flex-direction: row;
+      padding-top: 3.6rem;
+    }
+    .faq {
+      padding-left: 0;
+      &__title {
+        margin-bottom: 0;
+        min-width: 37%;
+      }
+      &__image {
+        position: absolute;
+        right: auto;
+        top: 12rem;
+        left: 2rem;
+        max-width: 20rem;
+      }
+    }
+    .item {
+      padding: 1.8rem 1.8rem 2.6rem 0rem;
+      &__title {
+        font-size: 2.2rem;
+        font-weight: 2.8rem;
+      }
+    }
+    .collspan-text {
+      font-size: 2.2rem;
+      line-height: 2.8rem;
+      display: inline;
+    }
+    .rowspan-text {
+      display: none;
+    }
+  }
+}
