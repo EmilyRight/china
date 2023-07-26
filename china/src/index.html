@@ -31,12 +31,30 @@
     <link rel="preconnect" href="//ajax.googleapis.com/ajax/libs/jquery/" />
     <link rel="preconnect" href="//www.googletagmanager.com/" />
 
-    <!--
-        <link rel="preload" as="font" href="./fonts/stencil/StandardCTStencil-Bold.woff" crossorigin="anonymous">
-        <link rel="preload" as="font" href="./fonts/tele2_textsans-bold.woff" crossorigin="anonymous">
-        <link rel="preload" as="font" href="./fonts/tele2_displayserif-bold.woff" crossorigin="anonymous">
-        <link rel="preload" as="font" href="./fonts/tele2_textsans-regular.woff" crossorigin="anonymous">
-    -->
+    <link
+      rel="preload"
+      as="font"
+      href="./fonts/stencil/StandardCTStencil-Bold.woff"
+      crossorigin="anonymous"
+    />
+    <link
+      rel="preload"
+      as="font"
+      href="./fonts/tele2_textsans-bold.woff"
+      crossorigin="anonymous"
+    />
+    <link
+      rel="preload"
+      as="font"
+      href="./fonts/tele2_displayserif-bold.woff"
+      crossorigin="anonymous"
+    />
+    <link
+      rel="preload"
+      as="font"
+      href="./fonts/tele2_textsans-regular.woff"
+      crossorigin="anonymous"
+    />
 
     <!-- Google Tag Manager -->
     <script>
@@ -55,25 +73,44 @@
 
     <!-- CSS -->
     <link rel="stylesheet" href="./css/main.min.css?v1" media="all" />
+    <meta property="og:url" content=" https://for-china.tele2.ru" />
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta property="og:image:width" content="968" />
+    <meta property="og:image:height" content="504" />
+    <meta
+      name="twitter:image:src"
+      content="https://for-china.tele2.ru/src/img/preview-og.jpg"
+    />
+    <link
+      rel="image_src"
+      href="https://for-china.tele2.ru/src/img/preview-og.jpg"
+    />
+    <meta
+      name="twitter:image"
+      content="https://for-china.tele2.ru/src/img/preview-og.jpg"
+    />
+    <meta property="og:locale" content="ru_RU" />
 
+    <meta
+      property="og:image"
+      content="https://for-china.tele2.ru/src/img/preview-og.jpg"
+    />
+    <meta
+      property="og:image:secure_url"
+      content="https://for-china.tele2.ru/src/img/preview-og.jpg"
+    />
     <!-- OG -->
     <!--
         <meta name="description" content="[*pagedescription*]">
         <meta property="og:title" content="[*pagetitle*]"/>
         <meta property="og:description" content="[*pagedescription*]"/>
-        <meta property="og:url" content="https://[*URL*].tele2.ru"/>
-        <meta property="og:locale" content="ru_RU"/>
 
-        <meta property="og:image" content="https://[*URL*].tele2.ru/src/img/preview-og.jpg"/>
-        <meta property="og:image:secure_url" content="https://[*URL*].tele2.ru/src/img/preview-og.jpg"/>
-        <meta property="og:image:width" content="968"/><meta property="og:image:height" content="504"/>
+
+
 
         <meta name="twitter:title" content="[*pagetitle*]"/>
         <meta name="twitter:description" content="[*pagedescription*]"/>
-        <meta name="twitter:card" content="summary_large_image"/>
-        <meta name="twitter:image:src" content="https://[*URL*].tele2.ru/src/img/preview-og.jpg"/>
-        <link rel="image_src" href="https://[*URL*].tele2.ru/src/img/preview-og.jpg"/>
-        <meta name="twitter:image" content="https://[*URL*].tele2.ru/src/img/preview-og.jpg"/>-->
+-->
 
     <meta
       name="apple-mobile-web-app-status-bar-style"
@@ -196,7 +233,13 @@
                         800
                       </div>
                     </div>
-                    <a href="" class="plan-price__button btn">选择</a>
+                    <a
+                      href="https://tele2.ru/shop/checkout?simplePurchase=true&tariff=black"
+                      class="plan-price__button btn js-gtm-event"
+                      data-event="conv_tariff-black"
+                      target="_blank"
+                      >选择</a
+                    >
                   </div>
                 </div>
               </li>
@@ -267,7 +310,13 @@
                         700
                       </div>
                     </div>
-                    <a class="plan-price__button btn" href="">选择</a>
+                    <a
+                      class="plan-price__button btn js-gtm-event"
+                      href="https://tele2.ru/shop/checkout?simplePurchase=true&tariff=my-online-plus"
+                      data-event="conv_tariff-mo-plus"
+                      target="_blank"
+                      >选择</a
+                    >
                   </div>
                 </div>
               </li>
@@ -340,7 +389,13 @@
                         600
                       </div>
                     </div>
-                    <a href="" class="plan-price__button btn">选择</a>
+                    <a
+                      href="https://tele2.ru/shop/checkout?simplePurchase=true&tariff=my-online"
+                      class="plan-price__button btn js-gtm-event"
+                      data-event="conv_tariff-mo"
+                      target="_blank"
+                      >选择</a
+                    >
                   </div>
                 </div>
               </li>
@@ -366,7 +421,7 @@
                 <img
                   src="./img/icons/offer1.svg"
                   alt=""
-                  class="offers-item__img"
+                  class="offers-item__img wow fadeIn"
                 />
               </li>
               <li class="offers__item offers-item">
@@ -377,7 +432,8 @@
                 <img
                   src="./img/icons/offer2.svg"
                   alt=""
-                  class="offers-item__img"
+                  class="offers-item__img wow fadeIn"
+                  data-wow-delay=".2s"
                 />
               </li>
               <li class="offers__item offers-item">
@@ -390,7 +446,8 @@
                 <img
                   src="./img/icons/offer3.svg"
                   alt=""
-                  class="offers-item__img"
+                  class="offers-item__img wow fadeIn"
+                  data-wow-delay=".4s"
                 />
               </li>
               <li class="offers__item offers-item">
@@ -402,7 +459,8 @@
                 <img
                   src="./img/icons/offer4.svg"
                   alt=""
-                  class="offers-item__img"
+                  class="offers-item__img wow fadeIn"
+                  data-wow-delay=".6s"
                 />
               </li>
               <li class="offers__item offers-item">
@@ -415,7 +473,8 @@
                 <img
                   src="./img/icons/offer5.svg"
                   alt=""
-                  class="offers-item__img"
+                  class="offers-item__img wow fadeIn"
+                  data-wow-delay=".8s"
                 />
               </li>
               <li class="offers__item offers-item">
@@ -428,7 +487,8 @@
                 <img
                   src="./img/icons/offer6.svg"
                   alt=""
-                  class="offers-item__img"
+                  class="offers-item__img wow fadeIn"
+                  data-wow-delay="1s"
                 />
               </li>
             </ul>
@@ -453,8 +513,19 @@
                 </ul>
               </div>
             </div>
-            <img src="./img/page/boolean.png" alt="" class="mix__image" />
-            <a href="" class="mix__button btn">开通服务</a>
+            <img
+              src="./img/page/boolean.png"
+              alt=""
+              class="mix__image wow fadeInDown"
+              data-wow-delay=".4s"
+            />
+            <a
+              href="https://tele2.ru/mixx-max"
+              class="mix__button btn js-gtm-event"
+              data-event="connect-mix"
+              target="_blank"
+              >开通服务</a
+            >
           </div>
         </div>
       </section>
@@ -471,7 +542,14 @@
               <h3 class="benefits__title">"远邻国家"服务</h3>
               <p class="benefits__price">月费100卢布</p>
             </div>
-            <a href="" class="benefits__button btn"> 开通服务 </a>
+            <a
+              href="https://tele2.ru/business/option/far-abroad"
+              class="benefits__button btn js-gtm-event"
+              target="_blank"
+              data-event="far-abroad"
+            >
+              开通服务
+            </a>
           </div>
         </div>
         <div class="join__row cost">
@@ -488,7 +566,11 @@
       <section class="section section--faq section-faq">
         <div class="section-layer">
           <h3 class="faq__title">热门问题</h3>
-          <img src="./img/page/question.png" alt="" class="faq__image" />
+          <img
+            src="./img/page/question.png"
+            alt=""
+            class="faq__image wow fadeIn"
+          />
           <div class="faq">
             <div class="faq__content">
               <div class="faq__item item">
@@ -505,7 +587,6 @@
                       <use xlink:href="#faq-arrow"></use>
                     </svg>
                   </div>
-                  <!-- <img class="item__close-icon" src="./img/icons/arrow.svg" /> -->
                 </div>
                 <div class="item__text">
                   <p class="small-text">您可以键入*105#命令检查余额</p>
@@ -576,34 +657,45 @@
                     从俄罗斯国内的手机到另一个国家的号码打电话时，您需要拨打:
                     [国际区号][电话区号][用户号码] 东亚主要国家
                   </p>
+
+                  <div class="tariffs-table"></div>
                   <table class="tariffs">
                     <tr>
                       <td class="code">+86</td>
                       <td>China</td>
                       <td>中国</td>
-                      <td rowspan="2" class="rowspan-text">
-                        <b>100卢布</b>/分钟
-                      </td>
                     </tr>
                     <tr>
                       <td class="code">+91</td>
                       <td>India</td>
                       <td>印度</td>
+                      <!-- <td class="empty">
+
+                      </td> -->
                     </tr>
                     <tr>
                       <td class="code">+852</td>
                       <td>Hong Kong</td>
                       <td>香港</td>
+                      <!-- <td class="empty">
+
+                      </td> -->
                     </tr>
                     <tr>
                       <td class="code">+81</td>
                       <td>Japan</td>
                       <td>日本</td>
+                      <!-- <td class="empty">
+
+                      </td> -->
                     </tr>
                     <tr>
                       <td class="code">+81</td>
                       <td>Vietnam</td>
                       <td>越南</td>
+                      <!-- <td class="empty">
+
+                      </td> -->
                     </tr>
                     <tr class="colspan-text">
                       <td colspan="3"><b>100卢布</b>/分钟</td>
@@ -615,26 +707,19 @@
           </div>
         </div>
       </section>
-      <section class="section section--footer">
+      <section class="section section--footer footer">
         <div class="section-layer">
-          <div class="box-content">
-            <div class="copyrights">18+ &copy; Tele2 Россия, 2023.</div>
-            <div class="rules">
-              <a
-                href="https://tele2.ru/minutes-management"
-                target="_blank"
-                class="text-link js-gtm-event"
-                data-event="rules-link"
-                data-section="section-footer"
-                >Подробное&nbsp;описание</a
-              >
+          <div class="footer__text-block">
+            <h3 class="footer__title">如果您找不到问题的答案</h3>
+            <div class="footer__text">
+              如果您仍有任何问题，请联系支持服务。热线中心服务员随时用中文帮助您解决任何问题。
             </div>
           </div>
+          <div class="footer__phone">888</div>
         </div>
       </section>
     </div>
 
     <script type="module" src="./js/main.js?v1" defer></script>
-    <!--<script type="text/javascript" src="./js/gtm-events.js" defer></script>-->
   </body>
 </html>

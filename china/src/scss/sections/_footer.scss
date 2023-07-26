@@ -1,0 +1,48 @@
+.section--footer {
+  padding-bottom: 6.4rem;
+  .section-layer {
+    border-radius: 1.2rem;
+    background-color: #f3f5f6;
+    display: flex;
+    flex-direction: column;
+    max-width: 90%;
+    padding: 1.8rem;
+  }
+  .footer {
+    &__title {
+      font-size: 2.2rem;
+      line-height: 2.8rem;
+      margin-bottom: 1.8rem;
+    }
+
+    &__text {
+      @include text-main;
+      margin-bottom: 1.8rem;
+    }
+
+    &__phone {
+      font-size: 3.8rem;
+      line-height: 4.4rem;
+      font-weight: 700;
+    }
+  }
+  @media (min-width: 600px) {
+    padding-bottom: 11.5rem;
+    .section-layer {
+      flex-direction: row;
+      max-width: 80%;
+      padding: 3.6rem;
+      align-items: center;
+    }
+    .footer {
+      &__text {
+        margin-bottom: 0;
+      }
+
+      &__phone {
+        font-size: 5.4rem;
+        line-height: 5.4rem;
+      }
+    }
+  }
+}

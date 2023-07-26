@@ -2,13 +2,17 @@
 /* eslint-disable no-use-before-define */
 import { WOW } from './vendor/wow.min';
 import detectDevice from './components/detectDevice';
+import GTMEvents from './components/gtmEvents';
 
 /// /////// DocReady //////////
+const GTM = new GTMEvents();
+
 window.addEventListener('load', () => {
   detectDevice(); // videoTeaser();
   new WOW().init();
   changeData();
   faqOpener();
+  GTM.addEventListeners();
 });
 
 function detectRegion() {
